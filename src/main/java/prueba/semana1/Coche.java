@@ -1,8 +1,14 @@
 package prueba.semana1;
 
+import javax.persistence.Entity;
+import javax.persistence.Inheritance;
+import javax.persistence.InheritanceType;
+
 /**
  * Coche.java Clase para el objecto Coche
  */
+@Entity
+@Inheritance(strategy=InheritanceType.TABLE_PER_CLASS)
 public class Coche extends Vehiculo {
 
     private String tipoMarchas;

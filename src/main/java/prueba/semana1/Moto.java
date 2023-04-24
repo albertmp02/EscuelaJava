@@ -1,8 +1,14 @@
 package prueba.semana1;
 
+import javax.persistence.Entity;
+import javax.persistence.Inheritance;
+import javax.persistence.InheritanceType;
+
 /**
  * Moto.java Clase para el objecto Moto
  */
+@Entity
+@Inheritance(strategy=InheritanceType.TABLE_PER_CLASS)
 public class Moto extends Vehiculo {
     private String tipoMoto;
     protected static final String TIPO = "Moto";

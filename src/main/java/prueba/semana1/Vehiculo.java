@@ -2,9 +2,12 @@ package prueba.semana1;
 
 import java.util.Date;
 
+import javax.persistence.MappedSuperclass;
+
 /**
  * Vehiculo.java Clase para el objecto Vehiculo
  */
+@MappedSuperclass
 public abstract class Vehiculo implements Conducible {
     protected String color;
     protected String marca;

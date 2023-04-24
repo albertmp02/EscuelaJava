@@ -1,5 +1,9 @@
 package prueba.semana1;
 
+import javax.persistence.Entity;
+import javax.persistence.Inheritance;
+import javax.persistence.InheritanceType;
+
 /**
  * Barco.java Clase para el objecto Barco
  *
@@ -7,6 +11,8 @@ package prueba.semana1;
  * @revisor: Carlos
  * @version: 1.0
  */
+@Entity
+@Inheritance(strategy=InheritanceType.TABLE_PER_CLASS)
 public class Barco extends Vehiculo {
     private String tipoBarco;
     protected static final String TIPO = "Barco";
