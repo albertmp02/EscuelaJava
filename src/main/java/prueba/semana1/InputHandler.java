@@ -100,4 +100,64 @@ public class InputHandler {
         this.scanner.close();
         this.scanner = new Scanner(System.in);
     }
+    
+    private Vehiculo getVehiculo() {
+    	//Lo hago de esta manera, no se me ocurria otra manera de devolver un Vehiculo
+    	Vehiculo vehiculo;
+    	Coche coche;
+    	String color, marca, precio, matricula;
+    	
+    	System.out.println("Color:");
+    	color = scanner.nextLine();
+    	System.out.println("Marca: ");
+    	marca = scanner.nextLine();
+    	System.out.println("Precio: ");
+    	precio = scanner.nextLine();
+    	System.out.println("Matricula: ");
+    	matricula = scanner.nextLine();
+    	
+    	coche = new Coche(color, marca, precio, matricula, "");
+    	vehiculo = (Vehiculo)coche;
+    	
+    	return vehiculo;
+    }
+    
+    public Coche getCoche() {
+    	Coche coche;
+    	Vehiculo vehiculo = getVehiculo();
+    	String tipoMarchas;
+    	
+    	System.out.println("TipoMarchas: ");
+    	tipoMarchas = scanner.nextLine();
+    	
+    	
+    	coche = new Coche(vehiculo.getColor(), vehiculo.getMarca(), vehiculo.getPrecio(), vehiculo.getMatricula(), tipoMarchas);
+    	return coche;
+    }
+    
+    public Moto getMoto() {
+    	Moto moto;
+    	Vehiculo vehiculo = getVehiculo();
+    	String tipoMoto;
+    	
+    	System.out.println("TipoMoto: ");
+    	tipoMoto = scanner.nextLine();
+    	
+    	
+    	moto = new Moto(vehiculo.getColor(), vehiculo.getMarca(), vehiculo.getPrecio(), vehiculo.getMatricula(), tipoMoto);
+    	return moto;
+    }
+    
+    public Barco getBarco() {
+    	Barco barco;
+    	Vehiculo vehiculo = getVehiculo();
+    	String tipoBarco;
+    	
+    	System.out.println("TipoBarco: ");
+    	tipoBarco = scanner.nextLine();
+    	
+    	
+    	barco = new Barco(vehiculo.getColor(), vehiculo.getMarca(), vehiculo.getPrecio(), vehiculo.getMatricula(), tipoBarco);
+    	return barco;
+    }
 }

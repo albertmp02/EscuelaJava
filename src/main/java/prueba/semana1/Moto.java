@@ -1,5 +1,6 @@
 package prueba.semana1;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
@@ -10,6 +11,7 @@ import javax.persistence.InheritanceType;
 @Entity
 @Inheritance(strategy=InheritanceType.TABLE_PER_CLASS)
 public class Moto extends Vehiculo {
+	@Column
     private String tipoMoto;
     protected static final String TIPO = "Moto";
 

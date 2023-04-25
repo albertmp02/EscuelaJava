@@ -6,13 +6,18 @@ package prueba.semana1;
  */
 public class VehiculoManager {
     private Vehiculo vehiculo;
+    private DatabaseAccess database;
+    
+    public VehiculoManager() {
+    	database = new DatabaseAccess();
+    }
 
     /**
      * Método para crear un Vehiculo siguiendo el input del usuario.
      *
      * @return Vehiculo vehiculo
      */
-    public Vehiculo createVehiculo() {
+    public void createVehiculo() {
 
         InputHandler inputHandler = new InputHandler();
 
@@ -20,44 +25,33 @@ public class VehiculoManager {
 
         switch (tipoVehiculo) {
             case 0: // Coche
-                this.vehiculo = this.createCoche();
+                createCoche(inputHandler.getCoche());
                 break;
             case 1: // Moto
-                this.vehiculo = this.createMoto();
+            	createMoto(inputHandler.getMoto());
                 break;
             case 2: // Barco
-                this.vehiculo = this.createBarco();
+            	createBarco(inputHandler.getBarco());
                 break;
             case 3: // Salir
                 break;
             default: // Como default por opcion no incluida, salir
                 System.out.println("No se ha encontrado una opción válida.");
-                return null;
 
         }
-        return null; // no se ha encontrado ningun resultado valido
 
     }
 
-    private Vehiculo createCoche() {
-        Coche coche = new Coche("Rojo", "Toyota", "20.000 €", "SADF12", "Manual");
-        System.out.println(
-                "Se ha creado un vehículo de tipo Coche ");
-        return coche;
+    private void createCoche(Coche coche) {
+        database.crearVehiculo(coche);
     }
 
-    private Vehiculo createMoto() {
-        Moto moto = new Moto("Negro", "Yamaha", "50.000 €", "YTUI78", "Motocross");
-        System.out.println(
-                "Se ha creado un vehículo de tipo Moto ");
-        return moto;
+    private void createMoto(Moto moto) {
+        database.crearVehiculo(moto);
     }
 
-    private Vehiculo createBarco() {
-        Barco barco = new Barco("Rojo", "Toyota", "20.000 €", "VBNM76", "Yate");
-        System.out.println(
-                "Se ha creado un vehículo de tipo Barco ");
-        return barco;
+    private void createBarco(Barco barco) {
+        database.crearVehiculo(barco);
     }
 
     /**
