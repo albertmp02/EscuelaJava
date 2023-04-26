@@ -1,6 +1,9 @@
 package prueba.semana1;
 
 
+import java.io.File;
+import java.io.IOException;
+import java.util.EnumSet;
 import java.util.List;
 
 import javax.persistence.EntityManager;
@@ -21,9 +24,40 @@ public class DatabaseAccess {
 	private Configuration configuration;
 	
 	public DatabaseAccess() {
+		configuration = new Configuration();
 		configuration.configure("hibernate.cfg.xml");
+//		configuration.setProperty("hibernate.hbm2ddl.auto", hibernateCreateOrUpdate());
+//		System.out.println("Valor de hibernate.hbm2ddl.auto: " + configuration.getProperty("hibernate.hbm2ddl.auto"));
 		entityManagerFactory = configuration.buildSessionFactory();
 		entityManager = entityManagerFactory.createEntityManager();
+	}
+	
+	/**
+	 * Este método comprueba si es la primera ejecución del programa, en caso de que
+	 * así lo sea, creará un fichero y devolvera el valor "create" indicando al programa
+	 * que la propiedad de hibernate debe ser create, y en caso de que ese fichero exista,
+	 * se devolvera que la propiedad de hibernate debe ser update.
+	 * Hago esto, porque, con la propiedad en update, hibernate no es capaz de crear la base de datos,
+	 * con lo que lo tienes que poner en create, pero si lo pones en create, cada vez que se ejecute,
+	 * va a reemplazar la base de datos anterior con una nueva, lo que nos hara perder datos,
+	 * y esto lo evitamos con la propiedad update, pero la propiedad update no es capaz de crear una
+	 * base de datos
+	 */
+	private String hibernateCreateOrUpdate() {
+	    File file = new File("primera_ejecucion.txt");
+	    String valorPropiedad = "update";
+
+	    if (!file.exists()) {
+	        try {
+	        	System.out.println("CREATE");
+	            file.createNewFile(); // crea el archivo para indicar que ya se hizo la primera ejecución
+	            valorPropiedad = "create";
+	        } catch (IOException e) {
+	            e.printStackTrace();
+	        }
+	    }
+
+	    return valorPropiedad;
 	}
 	
 	public void cerrarConexion() {

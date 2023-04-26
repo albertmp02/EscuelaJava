@@ -9,6 +9,8 @@ package prueba.semana1;
 
 import org.apache.logging.log4j.core.Logger;
 import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
 
 /**
  * JavaDoc Summary.
@@ -18,5 +20,17 @@ import org.junit.Before;
  */
 
 public class MyAppTest {
+	
+	VehiculoManager vehiculoManager;
+	
+	@BeforeClass
+	public void setUp() {
+		vehiculoManager = new VehiculoManager();
+	}
+	
+	@Test
+	public void crearCocheTest() {
+		vehiculoManager.runAccion();
+	}
 
 }
