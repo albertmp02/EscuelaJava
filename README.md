@@ -1,14 +1,11 @@
 <!-- title: Clase Barco -->
 
-- [1. Clase Barco](#1-clase-barco)
-  - [1.1. Instalación](#11-instalación)
-  - [1.2. Descripción](#12-descripción)
-  - [1.3. Funcionalidades](#13-funcionalidades)
-  - [1.4. Uso](#14-uso)
-  - [1.5. Contribuir](#15-contribuir)
-  - [1.6. Historia](#16-historia)
-  - [1.7. Créditos y atribuciones](#17-créditos-y-atribuciones)
-  - [1.8. License](#18-license)
+- [1. Clase Barco](#10-clase-barco)
+  - [1.1. Descripción](#16-descripción)
+  - [1.2. Funcionalidades](#121-funcionalidades)
+  - [1.3. Uso](#39-uso)
+  - [1.4. Créditos y atribuciones](#45-créditos-y-atribuciones)
+  - [1.5. License](#49-license)
 
 # 1. Clase Barco
 
