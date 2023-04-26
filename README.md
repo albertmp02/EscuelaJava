@@ -261,3 +261,137 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
+#5. Clase VehiculoManager
+
+**VehiculoManager**
+
+Una clase que se encarga de gestionar los vehiculos
+
+## 5.1. Descripción
+
+La clase VehiculoManager se encarga de controlar todos los vehiculos
+
+## 5.2. Funcionalidades
+
+La clase VehiculoManager tiene las siguientes funcionalidades:
+
+    Constructor: Crea una instancia de VehiculoManager.
+    createVehiculo(): Pide datos al usuario sobre el vehiculo que debe crear, y lo crea y lo inserta en la base de datos
+    createCoche(): Inserta el coche en la base de datos
+    createMoto(): Inserta la moto en la base de datos
+    createBarco(): Inserta el barco en la base de datos
+
+```java
+VehiculoManager vehiculoManager = new VehiculoManager();
+vehiculoManager.createVehiculo();
+```
+
+## 5.3. Uso
+**Uso de la clase VehiculoManager**
+
+Para utilizar la clase VehiculoManager, primero se debe instanciar, y ya luego se pueden usar sus metodos
+
+## 5.4. Créditos y atribuciones
+
+Lead Developer - Albert Machio
+
+## 5.5. License
+
+The MIT License (MIT)
+
+Copyright (c) 2015 Chris Kibble
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+#5. Clase Vehiculo
+
+**Vehiculo**
+
+Superclase abstracta que representa todos los vehiculos
+
+## 5.1. Descripción
+
+La clase Vehiculo es una clase abstracta con atributos que comparten todos los vehiculos, como el color
+
+## 5.2. Funcionalidades
+
+La clase VehiculoManager tiene las siguientes funcionalidades:
+
+    Constructor: Crea una instancia de VehiculoManager.
+    impirmirDatos(): Imprime los datos génericos de los vehiculos
+    arrancar(): Arranca el coche en caso de que no esté arrancado todavia
+    parar(): Para el coche en caso de que ya esté arrancado
+    retroceder(int distancia): Retrocede unos metros designados por parametros
+    avanzar(int distancia): Avanza unos metros designados por parametros
+    
+
+```java
+(no se puede instanciar, asi que no se deberia usar)
+```
+
+## 5.3. Uso
+**Uso de la clase Vehiculo**
+
+Como esta clase es abstracta, no se puede isntanciar
+
+## 5.4. Créditos y atribuciones
+
+Lead Developer - Albert Machio
+
+## 5.5. License
+
+The MIT License (MIT)
+
+Copyright (c) 2015 Chris Kibble
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+#5. Clase MyApp
+
+**MyApp**
+
+Clase Main encargada de ejecutar el proyecto
+
+## 5.1. Descripción
+
+La clase MyApp contiene un método main y se encarga de ejecutar el proyecto
+
+## 5.2. Funcionalidades
+
+La clase VehiculoManager tiene las siguientes funcionalidades:
+
+    
+    main(String[] args): Método en el que se incluira toda la ejecucion del programa
+
+```java
+En el método main, se llamarán a los métodos deseados
+```
+
+## 5.3. Uso
+**Uso de la clase MyApp**
+
+Es la clase main, así que solo se usará en esa misma clase, y se creará el método main ejecutando lo que deseemos
+
+## 5.4. Créditos y atribuciones
+
+Lead Developer - Albert Machio
+
+## 5.5. License
+
+The MIT License (MIT)
+
+Copyright (c) 2015 Chris Kibble
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
