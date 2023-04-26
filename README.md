@@ -76,7 +76,7 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-#2. Clase Coche
+# 2. Clase Coche
 
 **Coche**
 
@@ -127,7 +127,7 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-#3. Clase Moto
+# 3. Clase Moto
 
 **Moto**
 
@@ -177,7 +177,7 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-#4. Clase DatabaseAccess
+# 4. Clase DatabaseAccess
 
 **DatabaseAccess**
 
@@ -224,7 +224,7 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-#5. Clase UserInput
+# 5. Clase UserInput
 
 **UserInput**
 
@@ -276,17 +276,17 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
-#5. Clase VehiculoManager
+# 6. Clase VehiculoManager
 
 **VehiculoManager**
 
 Una clase que se encarga de gestionar los vehiculos
 
-## 5.1. Descripción
+## 6.1. Descripción
 
 La clase VehiculoManager se encarga de controlar todos los vehiculos
 
-## 5.2. Funcionalidades
+## 6.2. Funcionalidades
 
 La clase VehiculoManager tiene las siguientes funcionalidades:
 
@@ -301,16 +301,16 @@ VehiculoManager vehiculoManager = new VehiculoManager();
 vehiculoManager.createVehiculo();
 ```
 
-## 5.3. Uso
+## 6.3. Uso
 **Uso de la clase VehiculoManager**
 
 Para utilizar la clase VehiculoManager, primero se debe instanciar, y ya luego se pueden usar sus metodos
 
-## 5.4. Créditos y atribuciones
+## 6.4. Créditos y atribuciones
 
 Lead Developer - Albert Machio
 
-## 5.5. License
+## 6.5. License
 
 The MIT License (MIT)
 
@@ -322,17 +322,17 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-#5. Clase Vehiculo
+# 7. Clase Vehiculo
 
 **Vehiculo**
 
 Superclase abstracta que representa todos los vehiculos
 
-## 5.1. Descripción
+## 7.1. Descripción
 
 La clase Vehiculo es una clase abstracta con atributos que comparten todos los vehiculos, como el color
 
-## 5.2. Funcionalidades
+## 7.2. Funcionalidades
 
 La clase VehiculoManager tiene las siguientes funcionalidades:
 
@@ -348,16 +348,16 @@ La clase VehiculoManager tiene las siguientes funcionalidades:
 (no se puede instanciar, asi que no se deberia usar)
 ```
 
-## 5.3. Uso
+## 7.3. Uso
 **Uso de la clase Vehiculo**
 
 Como esta clase es abstracta, no se puede isntanciar
 
-## 5.4. Créditos y atribuciones
+## 7.4. Créditos y atribuciones
 
 Lead Developer - Albert Machio
 
-## 5.5. License
+## 7.5. License
 
 The MIT License (MIT)
 
@@ -369,17 +369,17 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-#5. Clase MyApp
+# 8. Clase MyApp
 
 **MyApp**
 
 Clase Main encargada de ejecutar el proyecto
 
-## 5.1. Descripción
+## 8.1. Descripción
 
 La clase MyApp contiene un método main y se encarga de ejecutar el proyecto
 
-## 5.2. Funcionalidades
+## 8.2. Funcionalidades
 
 La clase VehiculoManager tiene las siguientes funcionalidades:
 
@@ -390,16 +390,16 @@ La clase VehiculoManager tiene las siguientes funcionalidades:
 En el método main, se llamarán a los métodos deseados
 ```
 
-## 5.3. Uso
+## 8.3. Uso
 **Uso de la clase MyApp**
 
 Es la clase main, así que solo se usará en esa misma clase, y se creará el método main ejecutando lo que deseemos
 
-## 5.4. Créditos y atribuciones
+## 8.4. Créditos y atribuciones
 
 Lead Developer - Albert Machio
 
-## 5.5. License
+## 8.5. License
 
 The MIT License (MIT)
 
